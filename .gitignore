@@ -1,0 +1,13 @@
+# Ignore SSL certificates
+cert.pem
+key.pem
+
+
+# Python virtual environment
+venv/
+__pycache__/
+*.pyc
+
+# Optional cache/images
+static/cache/
+.env
