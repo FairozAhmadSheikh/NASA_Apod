@@ -1,0 +1,7 @@
+Flask==2.2.5
+requests==2.31.0
+python-dotenv==1.0.0
+Flask-Talisman==1.1.0
+Flask-Limiter==2.8.0
+Flask-Caching==2.0.2
+validators==0.20.0
