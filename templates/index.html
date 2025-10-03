@@ -1,0 +1,28 @@
+{% extends "layout.html" %} {% block content %} {% if error %}
+<div class="error">{{ error }}</div>
+{% endif %} {% if apod %}
+<section class="apod-card">
+  <h2>{{ apod.title }} <span class="date">{{ apod.date }}</span></h2>
+
+  {% if apod.media_type == 'image' %}
+  <div class="image-wrap">
+    <img
+      src="{{ apod.local_url or apod.hdurl or apod.url }}"
+      alt="{{ apod.title }}"
+    />
+  </div>
+  {% elif apod.media_type == 'video' %}
+  <div class="video-wrap">
+    <iframe src="{{ apod.url }}" frameborder="0" allowfullscreen></iframe>
+  </div>
+  {% else %}
+  <p>Unknown media type.</p>
+  {% endif %}
+
+  <pre class="explain">{{ apod.explanation }}</pre>
+</section>
+{% else %}
+<div class="empty">
+  No APOD to show — try again later or select a valid date.
+</div>
+{% endif %} {% endblock %}
