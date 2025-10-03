@@ -23,8 +23,8 @@ A secure, hacker-themed Flask web application that fetches NASA's Astronomy Pict
 1. Clone the repository:
 
 ```bash
-git clone <your-repo-url>
-cd <repo-folder>
+git clone https://github.com/FairozAhmadSheikh/NASA_Apod
+cd NASA_Apod
 ```
 
 2. Create a virtual environment and install dependencies (Windows PowerShell):
