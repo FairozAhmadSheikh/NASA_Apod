@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>{{ title or 'APOD — Hacker Terminal' }}</title>
+    <title>{{ title or 'APOD — Data' }}</title>
     <link
       rel="stylesheet"
       href="{{ url_for('static', filename='css/style.css') }}"
@@ -35,7 +35,11 @@
         {% endif %} {% endwith %} {% block content %}{% endblock %}
       </main>
 
-      <footer class="footer">Built with ❤️ · Secure · Cached</footer>
+      <footer class="footer">
+  Built with ❤️ · Secure · Cached by 
+  <a href="https://github.com/FairozAhmadSheikh" target="_blank" class="footer-link">Fairoz Ahmad Sheikh</a>
+</footer>
+
     </div>
   </body>
 </html>

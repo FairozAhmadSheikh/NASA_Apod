@@ -101,3 +101,12 @@ body {
 .flash.error {
   color: #ff6b6b;
 }
+.footer-link {
+    color: #39ff14; /* same neon green */
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+    color: #7cff59; /* optional lighter neon on hover */
+}
