@@ -32,3 +32,38 @@ body {
   margin: 0;
   color: var(--accent);
 }
+.date-form input[type="date"] {
+  background: transparent;
+  border: 1px solid rgba(57, 255, 20, 0.12);
+  padding: 8px;
+  border-radius: 4px;
+  color: var(--accent);
+}
+.date-form button {
+  margin-left: 8px;
+  padding: 8px 10px;
+  border-radius: 4px;
+  border: 1px solid rgba(57, 255, 20, 0.12);
+  background: transparent;
+  color: var(--accent);
+  cursor: pointer;
+}
+.apod-card {
+  margin-top: 18px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.02),
+    rgba(255, 255, 255, 0.005)
+  );
+  padding: 16px;
+  border-radius: 6px;
+}
+.apod-card h2 {
+  margin: 6px 0 12px 0;
+  font-size: 20px;
+}
+.apod-card .date {
+  font-size: 12px;
+  color: var(--muted);
+  margin-left: 8px;
+}
