@@ -5,3 +5,10 @@ Flask-Talisman==1.1.0
 Flask-Limiter==2.8.0
 Flask-Caching==2.0.2
 validators==0.20.0
+fastapi
+jinja2
+uvicorn[standard]
+requests
+python-dotenv
+cachetools
+aiofiles
